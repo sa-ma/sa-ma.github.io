@@ -323,6 +323,7 @@ footer{
     }
     ul.topnav.responsive li a.nav-link{
         display: block;
+        text-align: center;
     }
     .dropdownLink a{
         color: #C0A062;
@@ -351,9 +352,14 @@ footer{
     .submit-btn-wrapper{
         text-align: center;
     }
+    nav ul{
+        width:100%;
+        margin: auto;
+    }
 }
 
 @media(max-width:600px){
+
     div.headershot-wrapper{
         padding: 2em 0;
     }
