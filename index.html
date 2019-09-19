@@ -1,170 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Raleway|Roboto+Slab" rel="stylesheet">
-
-  <!-- Custom Style -->
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Hi, I'm Sama and I am a web developer</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>I'm Samaila a Full-stack developer</title>
 </head>
-<body >
 
-  <div id="particles-js">
-    <div class="alternate-bg">
+<body>
+  <div class="hero-container" id="home">
+    <div class="hero-image">
+      <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843072/portfolio/Sama.png" alt="My image">
+    </div>
+    <div class="hero-section">
+      <div class="hero">
+        <p class="greetings">Hello!</p>
+        <h1>I'm Samaila Philemon Bala</h1>
+        <p>A full-stack developer, ardent learner, future Google Developer Expert, tech enthusiast and music lover.
+        </p>
 
-
-      <nav class="navbar" >
-        <div class="brand"> <a>&lt;/sama&gt;</a> </div>
-        <ul class="topnav" id="navbar-toogle">
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="dropdownLink"><a onclick="toogleDropdown()" href="javascript:void(0)">&#9776;</a></li>
-        </ul>
-      </nav>
-
-      <header>
-        <div class="headershot-wrapper">
-          <span class="pre-title">Hello,</span>
-          <h1 class="name">I'M SAMAILA PHILEMON BALA</h1>
-          <h3 class="title">and I'm a Full Stack Web Developer</h3>
-
-        <hr></hr>
-        <div class="header_social">
-          <ul class="social_icons">
-            <li><a href="https://www.twitter.com/samabalap" target="_blank"><i class="fab fa-twitter "></i></a></li>
-            <li><a href="https://www.facebook.com/samabalap" target="_blank"><i class="fab fa-facebook-f "></i></a></li>
-            <li><a href="https://www.instagram.com/samabalap" target="_blank"><i class="fab fa-instagram "></i></a></li>
-            <li><a href="https://www.github.com/sa-ma" target="_blank"><i class="fab fa-github "></i></a></li>
-            
-          </ul>
-        </div>
-        </div>
-      </header>
+        <a href="#about" class="hero-down-btn"><img
+            src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843072/portfolio/down-chevron.png"
+            alt="go down"></a>
+      </div>
     </div>
   </div>
+  <div class="menu-section" id="stickyMenu">
+    <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843069/portfolio/logo.png" alt="">
 
-  <section class="about-me" id="about">
-      
-        <div class="about-wrapper">
-            <div class="mypic">
-              <img src="assets/sama.jpg" alt="">
-            </div>
-            <div class="about-info">
-              <h2>About me</h2>
-              
-              <p> I am Samaila Philemon Bala and I am not your average full stack web developer.
-                  Web development is fun to me and I play with new technologies in my spare time which 
-                  in turn helps me churn out beautiful, modern, and functional products.               
-              </p>
+    <input class="nav-btn" type="checkbox" id="nav-btn" />
+    <label class="nav-icon" for="nav-btn"><i class="fa fa-bars"></i></label>
+    <nav id="home" class="sticky-nav" id="sticky-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-              <p> I speak only one language (English) :( and write so many, they include; Javascript/ES6, 
-                ReactJS, NodeJs, SQL, PHP. My favorite tools are GitHub, Sassy CSS, Visual Studio Code, and MongoDB.
-                I'm currently freelancing so I have all the time in the world to show you how fun my job is and together 
-                we can create more beautiful products.
-              </p>
-              <p>
+  </div>
+  <div class="about-section">
+    <h2 class="about" id="about">About</h2>
 
-              </p>
-            </div>
+    <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843069/portfolio/avatar.png" class="avatar"
+      alt="my avatar">
+    <p>I’m an app lover if there is any such thing as that. I love the whole process that goes into creating an
+      application from conception to deployment so you can find me sketching ideas on a paper, creating mockups on
+      figma, implementing the designs with React or creating the functionalities with NodeJs while I listen to my huge
+      playlist. When I’m not programming, you can find me trying to learn something new, watching football, playing
+      games, watching movies or trying to discover new artisits that I can add to my evergreen list
+    </p>
+    <a href="" class="hero-down-btn"><img
+        src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843181/portfolio/down-black.svg" alt="go down"></a>
+  </div>
+  <div class="work-section">
+    <h2 class="work" id="portfolio">Portfolio</h2>
+
+    <div class="portfolio">
+      <div class="portfolio-container">
+        <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843069/portfolio/p1.png" alt="Wayfarer API">
+        </<img>
+        <div class="portfolio-content"><a href="http://wayfarerapp.herokuapp.com/api-docs" target="_blank">A transport
+            booking server
+            built with NodeJs, Express, PostgreSQL</a>
         </div>
-      
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="portfolio-header">
-        <h1>Recent Works</h1>
       </div>
-      <div class="portfolio-wrapper">
-        <div class="portfolio-object">
-          <img  class="portfolio-box" src="assets/whatsheneedstoknow.jpg" alt="">
-          <h4>What she needs to know Initiative</h4>
 
-          <div id="overlay" >
-              <img  id="display" src="assets/whatsheneedstoknow.jpg" alt="">
-          </div>
-
+      <div class="portfolio-container">
+        <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843070/portfolio/p2.png" alt="Semely"></<img>
+        <div class="portfolio-content"><a href="https://semely.herokuapp.com" target="_blank">A meme genrator built with
+            ReactJs</a>
         </div>
-      
-        <div class="portfolio-object">
-          <img  class="portfolio-box" src="assets/tatup2.jpg" alt="">
-          <h4>Tatup Nigeria</h4>
+      </div>
 
-          <div id="overlay" >
-              <img  id="display" src="assets/tatup2.jpg" alt="">
-          </div>
-        </div>
-      
-        <div class="portfolio-object">
-          <img  class="portfolio-box" src="assets/seafloat_logistics.jpg" alt="">
-          <h4 >Seafloat Logistics</h4>
+      <div class="portfolio-container">
+        <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843070/portfolio/p3.png"
+          alt="HTML List Generator"></<img>
+        <div class="portfolio-content"><a href="https://sa-ma.github.io/htmlListGenerator/" target="_blank">A HTML list
+            Generator built with JavaScript</a></div>
+      </div>
 
-          <div id="overlay" >
-              <img  id="display" src="assets/seafloat_logistics.jpg" alt="">
-          </div>
-        </div>
-        <div class="portfolio-object">
-          <img  class="portfolio-box" src="assets/zodiac_maritime.jpg" alt="">
-          <h4>Zodiac Marine</h4>
-
-          <div id="overlay" >
-              <img  id="display" src="assets/zodiac_maritime.jpg" alt="">
-          </div>
-        </div>
+      <div class="portfolio-container">
+        <img src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843070/portfolio/p4.png" alt="Semely"></<img>
+        <div class="portfolio-content"><a href="https://sa-ma.github.io/noted/" target="_blank">A Notepad app built with
+            JavaScript and Local Storage</a></div>
       </div>
     </div>
-  </section>
+    <a href="" class="hero-down-btn"><img
+        src="https://res.cloudinary.com/dis3a42lz/image/upload/v1568843181/portfolio/down-black.svg" alt="go down"></a>
+  </div>
+  <footer class="contact-section">
+    <h2 class="contact" id="contact">Get in touch with me</h2>
 
-  <section class="contact-form" id="contact">
-    <div class="container">
-      <div class="portfolio-header">
-        <h1>Get in touch with me</h1>
-      </div>
-        <form action="contact.php" class="ctm" method="POST">
-            <div class="form-group flex">
-              <input type="text" class="form-control right" name="name" id="" placeholder="NAME" required>
-              <input type="email" class="form-control" name="email" id="" placeholder="EMAIL" required>
-            </div>
-            <div class="form-group">
-              <textarea name="" class="form-control" id="" rows="10" placeholder="MESSAGE" required></textarea>
-            </div>
-            <div class="submit-btn-wrapper">
-              <button class="submit-btn">Submit</button>
-            </div>
-          </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer_container">
-      <div class="container"> 
-        <span class="footer_brand brand"><a>&lt;/sama&gt;</a></span> &copy; 2018 All Rights Reserved  
-      </div>
-
-      <div class="footer_social">
-          <ul class="footer_social_icons">
-            <li><a href="https://www.twitter.com/samabalap" target="_blank"><i class="fab fa-twitter "></i></a></li>
-            <li><a href="https://www.facebook.com/samabalap" target="_blank"><i class="fab fa-facebook-f "></i></a></li>
-            <li><a href="https://www.instagram.com/samabalap" target="_blank"><i class="fab fa-instagram "></i></a></li>
-            <li><a href="https://www.github.com/sa-ma" target="_blank"><i class="fab fa-github "></i></a></li>
-          </ul>
-      </div>
+    <div class="social">
+      <a href="https://github.com/sa-ma" target="_blank">Github</a>
+      <a href="https://twitter.com/samabalap" target="_blank">Twitter</a>
+      <a href="https://www.linkedin.com/in/samabalap/" target="_blank">LinkedIn</a>
     </div>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-
-
+  <script src="./script.js"></script>
 </body>
+
 </html>
