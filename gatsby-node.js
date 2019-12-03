@@ -8,8 +8,8 @@
 
 const path = require("path")
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   const postTemplate = path.resolve("src/templates/blogPost.js")
 
@@ -18,7 +18,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       allMdx {
         edges {
           node {
-            html
+            body
             id
             frontmatter {
               path
@@ -35,14 +35,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(res.errors)
     }
 
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    res.data.allMdx.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
-        context: {
-          previous,
-          next,
-        },
       })
     })
   })
