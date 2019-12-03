@@ -43,3 +43,12 @@
 .read-more {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  .post-article {
+    padding: 2rem 1rem;
+  }
+}

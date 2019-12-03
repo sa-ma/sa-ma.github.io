@@ -20,6 +20,9 @@ body {
   background-color: var(--bg-color);
   border: 5px solid #00f;
   min-height: 100vh;
+}
+header,
+main {
   padding: 2rem;
 }
 .hero-links {

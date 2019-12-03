@@ -17,11 +17,11 @@
     "title": "Play Lyrics",
     "url": "https://lyricplay.netlify.com/",
     "image": "./images/playlyrics.png",
-    "description": "A lyric trivia game that allows a user to guess a particular song title based on the snippt lyric displayed.",
+    "description": "A lyric trivia game that allows a user to guess a particular song title based on the snippet displayed.",
     "technology": "HTML, CSS, JavaScript, React"
   },
   {
-    "title": "Senate Directory App",
+    "title": "Senate Directory",
     "url": "https://senate-directory.netlify.com/",
     "image": "./images/senate_directory.png",
     "description": "Senate Directory is a progressive web application that displays the names, senatorial districts and contact details of the Nigerian Senate.",
