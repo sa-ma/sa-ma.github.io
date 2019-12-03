@@ -1,0 +1,45 @@
+.post-article {
+  background: var(--secondary-color);
+  box-shadow: 1px 1px 4px var(--primary-color);
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.post-title {
+  color: var(--primary-color);
+}
+.post-date,
+.time-to-read {
+  font-weight: 300;
+  font-size: 14px;
+}
+.time-to-read {
+  margin-left: 10px;
+}
+.post-short-description {
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+.post-short-description img {
+  width: 80%;
+}
+.read-more {
+  font-size: 14px;
+}
+.post-short-description a {
+  color: #00f;
+}
+
+.post-short-description h2 {
+  font-size: 18px;
+}
+.post-short-description h2,
+.post-short-description h3 {
+  color: #000 !important;
+  margin: 1.5em 0;
+}
+.post-title:hover,
+.post-short-description a:hover,
+.read-more {
+  text-decoration: underline;
+}
