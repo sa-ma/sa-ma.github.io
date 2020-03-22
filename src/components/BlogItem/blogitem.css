@@ -20,6 +20,10 @@
   line-height: 1.5em;
   margin: 1em 0;
 }
+.post-short-description p {
+  line-height: 1.5rem;
+  margin: 15px 0;
+}
 .post-short-description img {
   width: 80%;
 }
