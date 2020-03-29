@@ -40,7 +40,7 @@ const BlogPage = () => {
             title={blogPost.frontmatter.title}
             date={blogPost.frontmatter.date}
             path={blogPost.frontmatter.path}
-            timeToRead={`${blogPost.timeToRead} mins`}
+            timeToRead={`${blogPost.timeToRead} min`}
             excerpt={blogPost.excerpt}
           />
         ))}

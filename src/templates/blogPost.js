@@ -21,7 +21,7 @@ const BlogTemplate = ({ data }) => {
 
           <div className="post-sub">
             <span className="post-date">{post.frontmatter.date}</span>
-            <span className="time-to-read">{`${post.timeToRead} mins`}</span>
+            <span className="time-to-read">{`${post.timeToRead} min`}</span>
           </div>
           <div className="post-short-description">
             <MDXRenderer>{post.body}</MDXRenderer>
