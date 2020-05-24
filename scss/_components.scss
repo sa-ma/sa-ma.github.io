@@ -1,0 +1,29 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid $color-dull-pink;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 100%;
+    margin: 1rem 0;
+    transition: all 0.5s;
+  }
+  &-location {
+    color: $color-dull-pink;
+    background-color: $color-white;
+    &:hover {
+      background-color: $color-dull-pink;
+      color: $color-white;
+    }
+  }
+  &-repo {
+    background-color: $color-dull-pink;
+    color: $color-white;
+    &:hover {
+      color: $color-dull-pink;
+      background-color: $color-white;
+    }
+  }
+}
