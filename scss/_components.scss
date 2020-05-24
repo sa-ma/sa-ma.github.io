@@ -1,29 +1,48 @@
+.glitch {
+  font-size: 7rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0 auto;
+  @include lg {
+    text-align: center;
+  }
+  @include textGlitch(
+    'glitch',
+    17,
+    $color-pink,
+    $color-black,
+    $color-dull-pink,
+    $color-white,
+    320,
+    115
+  );
+}
+
 .btn {
   &:link,
   &:visited {
-    display: inline-block;
-    padding: 1rem;
-    border: 1px solid $color-dull-pink;
-    border-radius: 8px;
+    display: block;
+    padding: 1rem 2rem;
+    border: 1px solid $color-pink;
     text-decoration: none;
-    width: 100%;
-    margin: 1rem 0;
     transition: all 0.5s;
-  }
-  &-location {
-    color: $color-dull-pink;
-    background-color: $color-white;
+    text-align: center;
+    margin: 1rem 0;
+    width: 100%;
     &:hover {
       background-color: $color-dull-pink;
       color: $color-white;
     }
   }
-  &-repo {
-    background-color: $color-dull-pink;
-    color: $color-white;
-    &:hover {
-      color: $color-dull-pink;
-      background-color: $color-white;
+  &-location {
+    color: $color-pink;
+    background-color: $color-white;
+    @include lg {
+      margin-right: 2rem !important;
     }
+  }
+  &-repo {
+    background-color: $color-pink;
+    color: $color-white;
   }
 }
