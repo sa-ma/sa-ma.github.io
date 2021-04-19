@@ -1,8 +1,5 @@
 $color-black: #1a1a1d;
-$color-gray: #4e4e50;
-$color-pink: #c3073f;
-$color-dull-pink: #950740;
-$color-very-dull-pink: #6f2232;
+$color-gray: #666;
 $color-white: #fff;
 
 $breakpoint-ipad: 1024px;
@@ -28,55 +25,6 @@ $breakpoint-mobile: 320px;
   }
 }
 
-@mixin textGlitch(
-  $name,
-  $intensity,
-  $textColor,
-  $background,
-  $highlightColor1,
-  $highlightColor2,
-  $width,
-  $height
-) {
-  color: $textColor;
-  position: relative;
-  $steps: $intensity;
-
-  // Ensure the @keyframes are generated at the root level
-  @at-root {
-    // We need two different ones
-    @for $i from 1 through 2 {
-      @keyframes #{$name}-anim-#{$i} {
-        @for $i from 0 through $steps {
-          $top: random(100);
-          $bottom: random(101 - $top);
-          #{percentage($i*(1/$steps))} {
-            clip-path: inset(#{$top}% 0 #{$bottom}% 0);
-          }
-        }
-      }
-    }
-  }
-  &::before,
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: $background;
-  }
-  &::after {
-    left: 2px;
-    text-shadow: -1px 0 $highlightColor1;
-    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
-  }
-  &::before {
-    left: -2px;
-    text-shadow: 2px 0 $highlightColor2;
-    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
-  }
-}
 
 *,
 *::before,
@@ -89,11 +37,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.7;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
 }
 
-.u-alternate-color {
-  color: $color-pink;
-}
