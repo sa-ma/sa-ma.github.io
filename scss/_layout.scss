@@ -117,3 +117,46 @@
     }
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: $color-gray;
+  padding: 2rem;
+  width: 100%;
+  @include lg {
+    padding: 0;
+  }
+  a {
+    color: $color-gray;
+    &:hover {
+      color: $color-black;
+      font-weight: 400;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+  @include lg {
+    max-width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-header {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__social {
+    margin-top: 2rem;
+    @include lg {
+      margin-top: 0;
+    }
+  }
+}

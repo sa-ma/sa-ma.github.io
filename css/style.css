@@ -173,3 +173,38 @@ body {
       .writing__content__item__subtitle {
         margin-top: 1.5rem;
         color: #666; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  padding: 2rem;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 0; } }
+  .footer a {
+    color: #666; }
+    .footer a:hover {
+      color: #1a1a1d;
+      font-weight: 400; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      margin-bottom: 1rem; }
+  @media (min-width: 1024px) {
+    .footer {
+      max-width: 70%;
+      flex-direction: row;
+      justify-content: space-between; } }
+  .footer-header {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+    .footer-header a {
+      text-decoration: none; }
+  .footer__social {
+    margin-top: 2rem; }
+    @media (min-width: 1024px) {
+      .footer__social {
+        margin-top: 0; } }

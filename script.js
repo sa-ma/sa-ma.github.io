@@ -32,3 +32,8 @@ abtBtn.addEventListener('click', () => {
           class="about-btn__text-no-line">&searr;</span>`;
   return;
 });
+
+// Copyright year so that I don't have to update it yearly
+const copyrightYear = document.querySelector('#copyright-year');
+const date = new Date();
+copyrightYear.innerHTML = date.getFullYear();
