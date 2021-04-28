@@ -49,15 +49,6 @@
     font-weight: 300;
     transition: all 0.5s ease-in-out;
     margin-bottom: 1rem;
-    a {
-      color: $color-gray;
-      font-weight: 200;
-      text-decoration-color: $color-gray;
-      &:hover {
-        text-decoration-color: $color-black;
-        color: $color-black;
-      }
-    }
   }
   &__expanded {
     display: none;
@@ -109,18 +100,6 @@
     width: 100%;
     &__item {
       margin-bottom: 2rem;
-      &__title {
-        &__link {
-          color: $color-black;
-          font-weight: 200;
-          text-decoration-color: $color-gray;
-          &:hover {
-            text-decoration-color: $color-black;
-            font-weight: 400;
-            color: $color-gray;
-          }
-        }
-      }
       &__subtitle {
         margin-top: 1.5rem;
         color: $color-gray;
@@ -178,17 +157,6 @@
         p {
           font-size: 1.8rem;
           margin-top: 1rem;
-          a {
-            color: $color-gray;
-            transition: all 0.5s ease-in-out;
-            &:hover {
-              color: $color-black;
-              font-weight: 700;
-            }
-            span {
-              text-decoration: none;
-            }
-          }
         }
       }
     }
@@ -204,13 +172,7 @@
   @include lg {
     padding: 0;
   }
-  a {
-    color: $color-gray;
-    &:hover {
-      color: $color-black;
-      font-weight: 400;
-    }
-  }
+
   ul {
     list-style: none;
     li {
@@ -226,12 +188,10 @@
     margin-bottom: 1rem;
     font-size: 1.6rem;
     text-transform: uppercase;
-    a {
-      text-decoration: none;
-    }
   }
   &__social {
     margin-top: 2rem;
+    width: max-content;
     @include lg {
       margin-top: 0;
     }

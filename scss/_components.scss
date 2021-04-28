@@ -1,3 +1,4 @@
+//  Cursor
 .cursor {
   width: 40px;
   height: 40px;
@@ -23,7 +24,7 @@
 
 .expand {
   animation: cursorAnim3 0.5s forwards;
-  border: 1px solid pink;
+  border: 1px solid $color-yellow;
 }
 
 .flex-block {
@@ -43,5 +44,22 @@
     @include lg {
       flex: 2;
     }
+  }
+}
+
+// Links
+
+.link {
+  background: linear-gradient(to bottom, $color-yellow 0%, $color-yellow 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: $color-gray;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background-size 0.2s;
+  &:hover {
+    color: black;
+    background-size: 4px 50px;
   }
 }
