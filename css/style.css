@@ -175,7 +175,7 @@ body {
     .writing {
       padding: 0; } }
   .writing__header {
-    font-weight: 200;
+    font-weight: 400;
     color: #666;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -200,7 +200,7 @@ body {
     .projects {
       padding: 0; } }
   .projects__header {
-    font-weight: 200;
+    font-weight: 400;
     color: #666;
     text-transform: uppercase;
     font-size: 1.4rem;
